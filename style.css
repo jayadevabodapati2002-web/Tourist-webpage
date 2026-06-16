@@ -3,6 +3,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+
 }
 
 body{
@@ -111,6 +112,7 @@ nav ul li a:hover{
 
 .card{
     background:white;
+    margin: 20px;
     padding:20px;
     border-radius:12px;
     text-align:center;
@@ -152,4 +154,188 @@ footer{
 .footer-content p{
     margin: 8px 0;
     font-size: 15px;
+}
+#menu-toggle{
+    display:none;
+}
+
+.menu-icon{
+    display:none;
+}
+
+/* ==========================
+   1440px and Below
+========================== */
+@media (max-width:1440px){
+
+    .container{
+        width:90%;
+        margin:auto;
+    }
+
+    .hero h1{
+        font-size:55px;
+    }
+}
+
+/* ==========================
+   1024px and Below
+========================== */
+@media (max-width:1024px){
+
+    nav ul{
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* ==========================
+   768px and Below
+========================== */
+@media (max-width:768px){
+
+    header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        position:relative;
+        padding:15px 20px;
+    }
+
+    /* Left Hamburger */
+    .menu-icon{
+        display:block;
+        font-size:30px;
+        color:white;
+        cursor:pointer;
+        order:1;
+    }
+
+    /* Center Logo */
+    .logo{
+        position:absolute;
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .logo-image{
+        width:60px;
+        height:60px;
+    }
+
+    /* Right Button */
+    .btn{
+        display:block;
+        padding:8px 15px;
+        font-size:14px;
+        order:3;
+    }
+
+    /* Hide Desktop Nav */
+    nav{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#0f172a;
+        z-index:1000;
+    }
+
+    nav ul{
+        display:flex;
+        flex-direction:column;
+        gap:0;
+    }
+
+    nav ul li{
+        text-align:center;
+        padding:15px;
+        border-top:1px solid rgba(255,255,255,0.1);
+    }
+
+    #menu-toggle:checked ~ nav{
+        display:block;
+    }
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        padding:20px;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .title{
+        font-size:30px;
+    }
+}
+
+/* ==========================
+   425px and Below
+========================== */
+@media (max-width:425px){
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .title{
+        font-size:24px;
+        text-align:center;
+    }
+
+    .card{
+        padding:15px;
+    }
+
+    .card img{
+        width:60px;
+        height:60px;
+    }
+
+    .card h2{
+        font-size:20px;
+    }
+
+    .card p{
+        font-size:14px;
+    }
+
+    .logo-image{
+        width:50px;
+        height:50px;
+    }
+
+    .btn{
+        font-size:12px;
+        padding:6px 10px;
+    }
+
+    footer{
+        padding:20px 10px;
+    }
 }
