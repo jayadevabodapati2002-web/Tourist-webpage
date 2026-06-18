@@ -41,7 +41,7 @@ header{
 }
 .hero{
     height: 120vh;
-    background-image: url("tourisim.jpeg");
+    background-image: url("background-image.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,18 +49,35 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    color: black;
-
+    text-align:center;
+    color: rgb(13, 7, 32);
+    background-color: white;
 
 }
 .hero h1{
     font-size: 60px;
-    margin-bottom: 15px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    animation-delay: 0.5s;
+
 }
 
 .hero p{
     font-size: 22px;
+    margin-bottom: 0;
+    animation-delay: 1s;
+}
+.anim{
+    opacity: 0;
+    transform: translate(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+
+    }
 }
 /* Navigation */
 nav ul{
@@ -119,7 +136,96 @@ nav ul li a:hover{
     box-shadow:0 4px 10px rgba(0,0,0,0.15);
     transition:0.3s;
 }
+.anim1{
+    opacity: 0;
+    transform: translate(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translate(0px);
 
+    }
+}
+.card1{
+    animation-delay: 0.5s;
+}
+.anim2{
+    opacity: 0;
+    transform: translate(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+
+    }
+}
+.card2{
+    animation-delay: 0.8s;
+}
+.anim3{
+    opacity: 0;
+    transform: translate(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+
+    }
+}
+.card3{
+    animation-delay: 1.1s;
+}
+.anim4{
+    opacity: 0;
+    transform: translate(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+
+    }
+}
+.card4{
+    animation-delay: 1.4s;
+}
+.anim5{
+    opacity: 0;
+    transform: translate(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+
+    }
+}
+.card5{
+    animation-delay: 1.7s;
+}
+.anim6{
+    opacity: 0;
+    transform: translate(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+
+    }
+}
+.card6{
+    animation-delay: 2.0s;
+}
 .card:hover{
     transform:translateY(-10px);
 }
@@ -149,11 +255,13 @@ footer{
 .footer-content h3{
     margin-bottom: 10px;
     color: #facc15;
+    animation-delay: 1.0s;
 }
 
 .footer-content p{
     margin: 8px 0;
     font-size: 15px;
+    animation-delay: 1.5s;
 }
 #menu-toggle{
     display:none;
